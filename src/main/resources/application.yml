@@ -1,0 +1,22 @@
+server:
+  port: 8080
+spring:
+  freemarker:
+    template-loader-path: classpath:/templates
+    suffix: .ftl
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springmvc
+    username: root
+    password: 123
+  redis:
+    host: localhost
+    port: 6379
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  config-location: classpath:mybatis/SqlMapConfig.xml
+url: http://www.itcast.cn
